@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
     <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:950px)"
+      href="../css/tablet.css"
+    />
+    <!--taking links from this site for images-->
     <script
       src="https://kit.fontawesome.com/f44c2ab54f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/tablet.js"></script>
   </head>
   <body>
     <div class="container1">
@@ -88,56 +96,13 @@
       <div class="box" id="box1">
         <!-- 1st part of first box -->
         <div class="firstItemBox">
-          <div class="firstItemBoxLeft"><h1>Home</h1></div>
+          <div class="firstItemBoxLeft"><h2>Home</h2></div>
           <div class="firstItemBoxRight"><a href="#">Create</a></div>
         </div>
         <!-- second part of first box -->
-        <div id="secondItemBox" class="lastPartBox">
-          <div id="" class="lastPartBoxElems">
-            <img
-              src="../images/recipe-chinesefood.png"
-              alt=""
-              class="img-story1"
-            />
-            <p>Not so secret Family Recipes</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/candle-1640516.jpg" alt="" class="img-story1" />
-            <p>Red table talk group</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/calender-month.png" alt="" class="img-story1" />
-            <p>Events</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/saved.png" alt="" class="img-story1" />
-            <p>Saved</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/games-folder.png" alt="" class="img-story1" />
-            <p>Gaming</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/fundraisers.png" alt="" class="img-story1" />
-            <p>Fundraisers</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/memories.png" alt="" class="img-story1" />
-            <p>Memories</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/search.png" alt="" class="img-story1" />
-            <p>Help & Support</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/settings.png" alt="" class="img-story1" />
-            <p>Settings & Privacy</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/seeMore.png" alt="" class="img-story1" />
-            <p>See more</p>
-          </div>
-        </div>
+        <!-- elements inside written with js-->
+        <div id="secondItemBox" class="lastPartBox"></div>
+        <!-- <button class="btn btn-primary my-4 generate_btn">Generate</button> -->
       </div>
       <!-- second box -->
       <div class="box" id="box2">
@@ -148,14 +113,14 @@
         </div>
         <!-- 2nd part of second box -->
         <div id="middle">
+          <!-- <div class="middleBox catsImgDiv"></div>
           <div id="" class="middleBox"></div>
           <div id="" class="middleBox"></div>
           <div id="" class="middleBox"></div>
           <div id="" class="middleBox"></div>
           <div id="" class="middleBox"></div>
           <div id="" class="middleBox"></div>
-          <div id="" class="middleBox"></div>
-          <div id="" class="middleBox"></div>
+          <div id="" class="middleBox"></div> -->
         </div>
         <!--3rd part of second box-->
         <div class="contain1">
@@ -172,92 +137,8 @@
           />
         </div>
         <!--4th part of second box-->
-        <div class="contain2">
-          <!--4.1th part of second box-->
-          <div id="" class="contain2Box">
-            <div id="" class="lastPartBoxElems1">
-              <!--js show all contacts-->
-              <div class="lastPartBoxElems" id="extraMP">
-                <img
-                  src="../images/candle-1640516.jpg"
-                  alt=""
-                  class="img-story"
-                />
-                <div class="lastPartBox">
-                  <span>Tom Russo</span>
-                  <div class="lastPartBoxElems" id="extraMP">
-                    <h6>5 min</h6>
-                    <i class="fa-solid fa-user-group" id="contactsIcon"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- div in two and spacebetween -->
-              <div class="lastPartBoxElems1">
-                <div class="firstItemBoxRight"><a href="#">...</a></div>
-              </div>
-              <!--js show all contacts-->
-            </div>
-            <p>Not having fun at all</p>
-            <div id="" class="lastPartBoxElems2">
-              <img src="../images/caffe.jpg" alt="" id="imgPost" />
-            </div>
-          </div>
-          <div id="" class="contain2Box">
-            <div id="" class="lastPartBoxElems1">
-              <!--js show all contacts-->
-              <div class="lastPartBoxElems" id="extraMP">
-                <img src="../images/fundraisers.png" alt="" class="img-story" />
-                <div class="lastPartBox">
-                  <span>Tom Russo</span>
-                  <div class="lastPartBoxElems" id="extraMP">
-                    <h6>5 min</h6>
-                    <i class="fa-solid fa-user-group" id="contactsIcon"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- div in two and spacebetween -->
-              <div class="lastPartBoxElems1">
-                <div class="firstItemBoxRight"><a href="#">...</a></div>
-              </div>
-              <!--js show all contacts-->
-            </div>
-            <div id="" class="lastPartBoxElems2">
-              <img src="../images/caffe.jpg" alt="" id="imgPost" />
-            </div>
-          </div>
-          <div id="" class="contain2Box">
-            <div id="" class="lastPartBoxElems1">
-              <!--js show all contacts-->
-              <div class="lastPartBoxElems" id="extraMP">
-                <img src="../images/memories.png" alt="" class="img-story" />
-                <div class="lastPartBox">
-                  <span>Tom Russo</span>
-                  <div class="lastPartBoxElems" id="extraMP">
-                    <h6>5 min</h6>
-                    <i class="fa-solid fa-user-group" id="contactsIcon"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- div in two and spacebetween -->
-              <div class="lastPartBoxElems1">
-                <div class="firstItemBoxRight"><a href="#">...</a></div>
-              </div>
-              <!--js show all contacts-->
-            </div>
-            <div id="" class="lastPartBoxElems2">
-              <img
-                src="../images/sunset-in-paris-1447018.jpg"
-                alt=""
-                id="imgPost"
-              />
-            </div>
-          </div>
-          <div id="" class="contain2Box"></div>
-          <div id="" class="contain2Box"></div>
-          <div id="" class="contain2Box"></div>
-          <div id="" class="contain2Box"></div>
-          <div id="" class="contain2Box"></div>
-        </div>
+        <!-- elements inside written with js-->
+        <div id="post_box" class="contain2"></div>
       </div>
       <!-- third box -->
       <div class="box" id="box3">
@@ -269,14 +150,16 @@
         <!-- second part of third box -->
         <div class="secondPart">
           <div class="partTop">
-            <div class="boxy">
+            <div class="boxy boxyImg">
               <!--icon inline with groups-->
               <div class="inlineFlex">
                 <i class="fa-solid fa-people-group"></i>
                 <h4>Groups</h4>
               </div>
-              <p>New ways to find and join communities</p>
-              <button class="btn">Find Your Groups</button>
+              <div>
+                <p>New ways to find and join communities</p>
+                <button class="btn">Find Your Groups</button>
+              </div>
             </div>
           </div>
           <div class="partBottom"><p>Henri and 6 friends joined Groups</p></div>
@@ -288,44 +171,8 @@
           <!--js show all contacts-->
         </div>
         <!-- fourth part of third box -->
-        <div class="lastPartBox">
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/candle-1640516.jpg" alt="" class="img-story1" />
-            <p>Dennis Han</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/calender-month.png" alt="" class="img-story1" />
-            <p>Eric Jonas</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/saved.png" alt="" class="img-story1" />
-            <p>Cynthia Lopez</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/games-folder.png" alt="" class="img-story1" />
-            <p>Anna Beck</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/fundraisers.png" alt="" class="img-story1" />
-            <p>Aiden Brown</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/memories.png" alt="" class="img-story1" />
-            <p>Betty Chen</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/search.png" alt="" class="img-story1" />
-            <p>Dan Brown</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/settings.png" alt="" class="img-story1" />
-            <p>Henri Cook</p>
-          </div>
-          <div id="" class="lastPartBoxElems">
-            <img src="../images/seeMore.png" alt="" class="img-story1" />
-            <p>Sandy</p>
-          </div>
-        </div>
+        <!-- elements inside written with js-->
+        <div class="lastPartBox" id="listSet"></div>
       </div>
     </div>
   </body>

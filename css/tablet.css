@@ -1,0 +1,12 @@
+/* #navbar     {
+      display: hidden
+    } */
+    /* media is like a if and it's used to make it responsive screen */
+      /* "screen" is a media type */
+        #navbar {
+          display: none;
+        }
+    
+    .contain2Box {
+    min-height: 10rem;
+    }
