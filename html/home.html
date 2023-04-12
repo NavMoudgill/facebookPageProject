@@ -11,6 +11,11 @@
       media="screen and (max-width:950px)"
       href="../css/tablet.css"
     />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:630px)"
+      href="../css/phone.css"
+    />
     <!--taking links from this site for images-->
     <script
       src="https://kit.fontawesome.com/f44c2ab54f.js"
@@ -18,9 +23,10 @@
     ></script>
     <script src="../js/home.js"></script>
     <script src="../js/tablet.js"></script>
+    <script src="../js/phone.js"></script>
   </head>
   <body>
-    <div class="container1">
+    <div class="container1 p_fix_t_0_l_0 d_f_j_a">
       <!-- first item of container-->
       <div class="item" id="firstItem">
         <div class="firstItemLeft">
@@ -40,9 +46,15 @@
       </div>
       <!-- second item of container -->
       <div class="item" id="secondItem">
+        <!-- other navbars for phone -->
+        <!-- <div id="otherNavbarPhone1">
+          <h2>Home</h2>
+
+        </div> -->
+        <div id="otherNavbarPhone2"></div>
         <!-- my navbar -->
 
-        <nav id="navbar">
+        <nav id="navbar" class="otherNavbar">
           <!--first unordered list of navbar-->
           <ul>
             <li class="listItems">
@@ -83,13 +95,23 @@
             <!--second unordered list of navbar-->
           </ul>
           <ul>
-            <li id="setting-icon">
+            <li id="setting-icon" class="listItems">
               <i class="fa-solid fa-cog" id="setC"></i>
             </li>
           </ul>
+          <!--extra work here for css and js-->
+          <div id="extraAll">
+            <!-- second part of first box changes its direction-->
+            <!-- elements inside written with js-->
+            <div class="lastPartImgs" id="photoShow"></div>
+          </div>
+          <!--extra work here for css and js-->
         </nav>
       </div>
     </div>
+    <!--tablet-
+    <button></button>
+    --tablet-->
     <!-- second container  of the page-->
     <div class="container2">
       <!-- first box ->2 parts-->
@@ -112,16 +134,8 @@
           <div class="firstItemBoxRight"><a href="#">See All</a></div>
         </div>
         <!-- 2nd part of second box -->
-        <div id="middle">
-          <!-- <div class="middleBox catsImgDiv"></div>
-          <div id="" class="middleBox"></div>
-          <div id="" class="middleBox"></div>
-          <div id="" class="middleBox"></div>
-          <div id="" class="middleBox"></div>
-          <div id="" class="middleBox"></div>
-          <div id="" class="middleBox"></div>
-          <div id="" class="middleBox"></div> -->
-        </div>
+        <!-- the data(the images )fetched from Internet-->
+        <div id="middle"></div>
         <!--3rd part of second box-->
         <div class="contain1">
           <img
@@ -139,7 +153,11 @@
         <!--4th part of second box-->
         <!-- elements inside written with js-->
         <div id="post_box" class="contain2"></div>
+        <!--fifth part of second box only for phone version-->
+        <!--fifth part of second box only for phone version-->
       </div>
+      <!-- <div id="forComment"></div> -->
+
       <!-- third box -->
       <div class="box" id="box3">
         <!-- 1st part of third box -->
@@ -175,5 +193,13 @@
         <div class="lastPartBox" id="listSet"></div>
       </div>
     </div>
+    <!--extra footer-->
+    <footer id="lastItemFtr">
+      <!-- <div class="ftr">hello</div>
+      <nav id="navbar">
+       
+      </nav> -->
+    </footer>
+    <!--extra footer-->
   </body>
 </html>

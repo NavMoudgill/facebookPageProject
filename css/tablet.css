@@ -1,12 +1,72 @@
-/* #navbar     {
+/*320px — 480px: Mobile devices. 
+481px — 768px: iPads, Tablets. 
+769px — 1024px: Small screens, laptops. 1
+025px — 1200px: Desktops, large screens.*/
+/*
+max-width:950px
+ #navbar     {
       display: hidden
     } */
     /* media is like a if and it's used to make it responsive screen */
       /* "screen" is a media type */
-        #navbar {
-          display: none;
-        }
-    
+      #navbar ul li{
+        display: none;
+      }
+      #btnExtra {
+        /* padding: 2px; */
+         display: block;
+         margin-right: 2rem;
+         border: 2px solid rgb(206, 198, 198);
+         display: flex;
+         justify-content: center;
+         align-items: center;      
+      }
+      #searchTab {
+        display: none;
+      }
+      #searchIcon {
+      display: none;
+      }
+       /* #searchIconExtra {
+       display: block;
+      }  */
     .contain2Box {
     min-height: 10rem;
     }
+   .container2 
+   {    
+    grid-template-columns: 2fr 1fr;
+   }
+    #box1 {
+      display: none;
+    }
+    #photoShow {
+     /* display: block; */
+           display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #extraAll {
+     display: flex;
+    }
+    /*class to images inside tablet.js */
+    .extraImgClass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0.3rem;
+    } 
+
+    /* third part of second box */
+.contain1 {
+  width:82% ;
+}
+.lastPartBox span {
+  font-size: 1rem;
+}
+/* 4th part of second box */
+    
+    .lastPartBox p {
+
+      font-size: 1rem;
+  }

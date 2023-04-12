@@ -1,14 +1,14 @@
 window.addEventListener("load", () => {
-  console.log("inside home.js");
+  fetchPics1();
   let post_container = document.getElementById("post_box");
   const NUM_OF_POSTS = 6;
   // lists of contacts
-  console.log("inside something.js");
   let list_container = document.getElementById("listSet");
   //this is for general lists
   let list_container1 = document.getElementById("secondItemBox");
   const NUM_OF_LIST = 10;
-  let arrImages = [
+  //this is for comment section images
+  const arrImages = [
     {
       img: "../images/peacock.jpg",
       name: "Tom Russo",
@@ -43,7 +43,6 @@ window.addEventListener("load", () => {
 
   let data = "";
   for (let i = 0; i < NUM_OF_POSTS; i++) {
-    console.log(i, arrImages[i]);
     data += generatePost({
       img: arrImages[i].img,
       name: arrImages[i].name,
@@ -52,7 +51,7 @@ window.addEventListener("load", () => {
   }
 
   //for list of contacts
-  let arrList = [
+  const arrList = [
     {
       img: "../images/recipe-chinesefood.png",
       name: "Dennis Han",
@@ -82,7 +81,7 @@ window.addEventListener("load", () => {
       name: "Dan Brown",
     },
     {
-      img: "../images/search.png",
+      img: "../images/getMoreInfo.png",
       name: "Henri Cook",
     },
     {
@@ -97,12 +96,12 @@ window.addEventListener("load", () => {
   let data1 = "";
   for (let i = 0; i < NUM_OF_LIST; i++) {
     // arrList
-    console.log(i, arrList[i]);
     data1 += genList({
       img: arrList[i].img,
       name: arrList[i].name,
     });
   }
+
   post_container.innerHTML = data;
   list_container.innerHTML = data1;
   list_container1.innerHTML = data1;
@@ -135,6 +134,28 @@ const generatePost = ({ img, name, time }) => {
         id="imgPost"
       />
     </div>
+    <div id="forComment">
+    <div class="extraImgClass">
+      <img
+        src="../images/thumbnail.png"
+        alt="likeButton"
+        class="img-story1"
+      />
+    </div>
+    <div class="extraImgClass">
+      <img
+        src="../images/comment.png"
+        alt="likeButton"
+        class="img-story1"
+      />
+    </div>
+    <div class="extraImgClass">
+      <img
+        src="../images/share.png"
+        alt="likeButton"
+        class="img-story1"
+      />
+    </div>
   </div>`;
 };
 
@@ -145,6 +166,12 @@ const genList = ({ img, name }) => {
     <p>${name}</p>
     </div>`;
 };
+//list of comments
+// const genComm = (imgUrl) => {
+//   return `<div id="" class="extraImgClass">
+//     <img src="${imgUrl}" alt="" class="img-story1" />
+//     </div>`;
+// };
 //random images
 //reqest has benn done for 10 images using fetch
 function fetchPics1() {
@@ -159,10 +186,7 @@ function fetchPics1() {
       .catch((err) => console.log(err));
   }
 }
-window.addEventListener("load", () => {
-  console.log("inside random images");
-  fetchPics1();
-});
+
 /*solo per una immagine
 function fetchPics() {
   let catsImgDiv = document.querySelector(".catsImgDiv");
