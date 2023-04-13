@@ -1,14 +1,5 @@
-/*320px — 480px: Mobile devices. 
-481px — 768px: iPads, Tablets. 
-769px — 1024px: Small screens, laptops. 1
-025px — 1200px: Desktops, large screens.*/
-/*
-max-width:950px
- #navbar     {
-      display: hidden
-    } */
-    /* media is like a if and it's used to make it responsive screen */
-      /* "screen" is a media type */
+/*max-width:950px*/
+    
       #navbar ul li{
         display: none;
       }
@@ -27,9 +18,6 @@ max-width:950px
       #searchIcon {
       display: none;
       }
-       /* #searchIconExtra {
-       display: block;
-      }  */
     .contain2Box {
     min-height: 10rem;
     }
@@ -41,8 +29,7 @@ max-width:950px
       display: none;
     }
     #photoShow {
-     /* display: block; */
-           display: flex;
+      display: flex;
       justify-content: center;
       align-items: center;
     }
@@ -56,8 +43,7 @@ max-width:950px
         align-items: center;
         padding:0.3rem;
     } 
-
-    /* third part of second box */
+  /* third part of second box */
 .contain1 {
   width:82% ;
 }
@@ -65,8 +51,6 @@ max-width:950px
   font-size: 1rem;
 }
 /* 4th part of second box */
-    
     .lastPartBox p {
-
       font-size: 1rem;
   }

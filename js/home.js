@@ -1,12 +1,10 @@
 window.addEventListener("load", () => {
   fetchPics1();
   let post_container = document.getElementById("post_box");
-  const NUM_OF_POSTS = 6;
   // lists of contacts
   let list_container = document.getElementById("listSet");
   //this is for general lists
   let list_container1 = document.getElementById("secondItemBox");
-  const NUM_OF_LIST = 10;
   //this is for comment section images
   const arrImages = [
     {
@@ -42,7 +40,7 @@ window.addEventListener("load", () => {
   ];
 
   let data = "";
-  for (let i = 0; i < NUM_OF_POSTS; i++) {
+  for (let i = 0; i < arrImages.length; i++) {
     data += generatePost({
       img: arrImages[i].img,
       name: arrImages[i].name,
@@ -94,7 +92,7 @@ window.addEventListener("load", () => {
     },
   ];
   let data1 = "";
-  for (let i = 0; i < NUM_OF_LIST; i++) {
+  for (let i = 0; i < arrList.length; i++) {
     // arrList
     data1 += genList({
       img: arrList[i].img,
@@ -166,14 +164,7 @@ const genList = ({ img, name }) => {
     <p>${name}</p>
     </div>`;
 };
-//list of comments
-// const genComm = (imgUrl) => {
-//   return `<div id="" class="extraImgClass">
-//     <img src="${imgUrl}" alt="" class="img-story1" />
-//     </div>`;
-// };
-//random images
-//reqest has benn done for 10 images using fetch
+
 function fetchPics1() {
   const NUM_DIS = 10;
   let divC = document.getElementById("middle");
@@ -186,69 +177,3 @@ function fetchPics1() {
       .catch((err) => console.log(err));
   }
 }
-
-/*solo per una immagine
-function fetchPics() {
-  let catsImgDiv = document.querySelector(".catsImgDiv");
-  catsImgDiv.innerHTML = "";
-  fetch("https://api.thecatapi.com/v1/images/search")
-    .then((response) => response.json())
-    .then((data) => {
-      let catsImgUrl = data[0].url;
-      let catImgEl = document.createElement("img");
-      catImgEl.setAttribute("src", `${catsImgUrl}`);
-      catImgEl.classList.add("showcase");
-      catImgEl.style.width = "100%";
-      catImgEl.style.height = "100%";
-      let catsImgDiv = document.querySelector(".catsImgDiv");
-      catsImgDiv.appendChild(catImgEl);
-    })
-    .catch((err) => console.log(err));
-}
-*/
-
-/*.boxy {
-  border: 1px solid rgb(34, 33, 33);
-  border-radius: 10px;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: url("../images/community.jpg") no-repeat center center/cover;
-    background-position: center;
-    position: relative;
-    z-index: -1;
- 
-}*/
-/*
-const fetchGeneral = async () => {
-  const response = await fetch(url);
-  if (!response.ok) {
-    const message = `An error has occured: ${response.status}`;
-    throw new Error(message);
-  }
-  const movies = await response.json();
-  return movies;
-};
-fetchGeneral().catch((error) => {
-  error.message; // 'An error has occurred: 404'
-});
-*/
-/*
-async function fetchMoviesAndCategories() {
-  const [moviesResponse, categoriesResponse] = await Promise.all([
-    fetch('/movies'),
-    fetch('/categories')
-  ]);
-  const movies = await moviesResponse.json();
-  const categories = await categoriesResponse.json();
-  return [movies, categories];
-}
-fetchMoviesAndCategories().then(([movies, categories]) => {
-  movies;     // fetched movies
-  categories; // fetched categories
-}).catch(error => {
-  // /movies or /categories request failed
-});
- */

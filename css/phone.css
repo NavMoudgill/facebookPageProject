@@ -11,17 +11,6 @@
     background-color: white;
     border-top: 1px solid rgb(166, 164, 164);
 }
-/* #otherNavbarPhone1{ 
-    border: 1px solid black;
-    width: 100%;
-    height: 66px;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: white;} */
 #otherNavbarPhone2{ 
     /* border: 1px solid red; */
     width: 100%;
@@ -35,13 +24,9 @@
     background-color: white;
 border-bottom: 1px solid rgb(210, 207, 207);
 }
-.ftr {
-/* border: 1px grey solid; */
-  } 
-  .container2 
-   {    
+.container2 {    
     grid-template-columns: 2fr ;
-   }
+}
 #box3{
     display:none;
 }
@@ -51,6 +36,3 @@ border-bottom: 1px solid rgb(210, 207, 207);
 .contain2 {
     width: 92%;
 }
-/* #forComment{
-
-} */
